@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assignment-3-vegetable</title>
+    <!-- Disny-UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- tailwind-css -->
     <script>
         tailwind.config = {
@@ -18,8 +21,80 @@
           }
         }
       </script>
+      <!-- font-Awsome -->
+      <script src="https://kit.fontawesome.com/88ca11b718.js" crossorigin="anonymous"></script>
+      <!-- font-family -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<style>
+    .sora-font{
+  font-family: "Sora", serif;
+  font-optical-sizing: auto;
+}
+</style>      
 </head>
-<body>
-    
+<body class="sora-font">
+    <header class="container mx-auto">
+        <nav class="px-4 border-b-2 border-green-600 lg:border-none w-full overflow-hidden">
+            <div class="navbar bg-base-100">
+              <div class="navbar-start">
+                <img src="c2-assets/logo-footer.png" alt="Logo" class="w-20 h-auto lg:hidden object-contain">
+                <img src="c2-assets/logo-header.png" alt="Logo" class="w-20 h-auto hidden lg:block object-contain">
+              </div>
+              <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                  <li><a>Product</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Contact us</a></li>
+                </ul>
+              </div>
+              <div class="navbar-end hidden lg:flex gap-3">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <a class="btn btn-outline btn-sm hover:bg-green-600 border-green-600 rounded-lg">Login</a>
+                <a class="btn btn-outline btn-sm hover:bg-green-600 border-green-600 rounded-lg">Register</a>
+              </div>
+              <div class="navbar-end lg:hidden">
+                <div class="dropdown">
+                  <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="green">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path>
+                    </svg>
+                  </div>
+                  <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box absolute left-0 top-full mt-3 w-52 p-2 shadow">
+                    <li><a>Product</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+                </div>
+              </div>
+          
+            </div>
+          </nav>
+          <!-- bannar section -->
+           <section>
+            <div class="hero bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF] ... ">
+                <div class="hero-content text-center mb-20 lg:mb-72">
+                  <div class="max-w-md relative">
+                    <h1 class="text-3xl font-semibold pt-12">Freshness <span class="text-gray-400">You Can <br>
+                        Count</span> On, Prices You’ll Love!</h1>
+                    <p class="py-6 text-xs">
+                        Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class=" flex justify-center items-center -mt-28 lg:-mt-80">
+                <img class="w-2/5" src="c2-assets/hero-vegetables.png" alt="">
+            </div>
+           </section>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
