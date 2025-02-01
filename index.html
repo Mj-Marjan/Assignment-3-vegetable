@@ -45,42 +45,45 @@
 </head>
 <body class="sora-font">
     <header class="container mx-auto">
-        <nav class="px-4 border-b-2 border-green-600 lg:border-none w-full overflow-hidden">
-            <div class="navbar bg-base-100">
-              <div class="navbar-start">
+      <nav class="px-4 border-b-2 border-green-600 lg:border-none w-full">
+        <div class="navbar bg-base-100 flex justify-between items-center">
+            <!-- Logo Section -->
+            <div class="navbar-start flex items-center">
                 <img src="c2-assets/Group.png" alt="Logo" class="w-20 h-auto lg:hidden object-contain">
                 <img src="c2-assets/logo-header.png" alt="Logo" class="w-20 h-auto hidden lg:block object-contain">
-              </div>
-              <div class="navbar-center hidden lg:flex">
+            </div>
+            <!-- Menu bar -->
+            <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
-                  <li><a>Product</a></li>
-                  <li><a>Services</a></li>
-                  <li><a>Contact us</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact us</a></li>
                 </ul>
-              </div>
-              <div class="navbar-end hidden lg:flex gap-3">
+            </div>
+            <!-- Icon & Buttons -->
+            <div class="navbar-end hidden lg:flex gap-3">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <i class="fa-solid fa-cart-shopping"></i>
                 <a class="btn btn-outline btn-sm hover:bg-green-600 border-green-600 rounded-lg">Login</a>
                 <a class="btn btn-outline btn-sm text-white bg-green-600 hover:text-black hover:bg-white border-green-600 rounded-lg">Register</a>
-              </div>
-              <div class="navbar-end lg:hidden">
-                <div class="dropdown">
-                  <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="green">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path>
-                    </svg>
-                  </div>
-                  <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box absolute left-0 top-full mt-3 w-52 p-2 shadow">
-                    <li><a>Product</a></li>
-                    <li><a>Services</a></li>
-                    <li><a>Contact us</a></li>
-                  </ul>
-                </div>
-              </div>
-          
             </div>
-          </nav>
+           <!-- (Dropdown) -->
+            <div class="navbar-end lg:hidden">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="green">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path>
+                        </svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box absolute right-0 top-full mt-2 w-52 p-2 shadow">
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
           <!-- bannar section -->
            <section>
             <div class="hero bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF] ... ">
@@ -334,7 +337,7 @@
         </div>
        </section>
        <!-- Offers Section -->
-        <section class="p-3 mt-10 container mx-auto font-popins mb-10">
+        <section class="p-3 mt-10 container mx-auto font-popins">
           <div class="p-3 lg:p-20">
             <h2 class="font-semibold text-green-600 text-3xl mb-10 mt-14">Arrival & Offers</h2>
           <div class="lg:flex  gap-5">
